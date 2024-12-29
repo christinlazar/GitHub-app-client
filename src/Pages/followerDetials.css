@@ -1,0 +1,81 @@
+.repository-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  .repository-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px;
+    border-bottom: 1px solid #eaecef;
+    gap: 16px;
+  }
+  
+  .repository-item:last-child {
+    border-bottom: none;
+  }
+  
+  .repository-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  
+  .repository-content {
+    flex: 1;
+  }
+  
+  .repository-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  
+  .repository-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0366d6;
+  }
+  
+  .verified-icon {
+    width: 16px;
+    height: 16px;
+    color: #1a73e8;
+  }
+  
+  .repository-description {
+    margin: 0;
+    font-size: 14px;
+    color: #586069;
+    line-height: 1.5;
+  }
+  
+
+  .repository-item:hover {
+    background-color: #f6f8fa;
+  }
+  
+  .repository-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .follower_repo_head{
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .follower_repo_maindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .back_button{
+    margin-top:30px;
+  }
+  .back_button:hover{
+    cursor: pointer;
+  }

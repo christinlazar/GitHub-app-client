@@ -1,0 +1,178 @@
+.inputField{
+    margin-top: 50px;
+    height: 30px;
+    width: 100px;
+  }
+  .container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: .5px solid rgb(29, 28, 28);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 37%;
+    margin-top: 50px;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    padding-left: 5px;
+    margin-left: 5px;
+  }
+  
+  label i {
+    font-size: 18px; 
+    color: #2e5697; 
+  }
+  
+  
+  input {
+    padding: 12px 15px;
+    font-size: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  input:focus {
+    border-color: #4d90fe;
+    box-shadow: 0 0 5px #2e5697;
+  }
+  
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  input:hover {
+    border-color: #bbb;
+  }
+  
+  button{
+    background-color: #2e5697;
+    color: white;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+  }
+  button:hover{
+    background-color: #234a89;
+  }
+  
+  .repository-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  .repository-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px;
+    border-bottom: 1px solid #eaecef;
+    gap: 16px;
+  }
+  .repository-item-2{
+    display: flex;
+    align-items: flex-start;
+    padding: 16px;
+    border-bottom: 1px solid #eaecef;
+    gap: 16px;
+    margin: 50px;
+    
+  }
+  
+  .repository-item:last-child {
+    border-bottom: none;
+  }
+  
+  .repository-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  
+  .repository-content {
+    flex: 1;
+    /* box-shadow: 8px 10px 3px rgba(31, 30, 30, 0.5); */
+  }
+  .repository-content-2{
+    flex: 1;
+    display:flex;
+    justify-content: center;
+    box-shadow: 8px 5px 3px rgba(23, 20, 20, 0.5);
+  }
+  
+  .repository-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  
+  .repository-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0366d6;
+  }
+  
+  .verified-icon {
+    width: 16px;
+    height: 16px;
+    color: #1a73e8;
+  }
+  
+  .repository-description {
+    margin: 0;
+    font-size: 14px;
+    color: #586069;
+    line-height: 1.5;
+  }
+  
+
+  .repository-item:hover {
+    background-color: #f6f8fa;
+  }
+  
+  .repository-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .profile-div{
+    display: flex;
+    justify-content: center;
+  }
+  .avatar_img{
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 20px;
+  }
+  h4{
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+  .follow_class{
+    margin-top: 35px;
+    margin-left: 20px;
+  }
+  .follow_class:hover{
+    cursor: pointer;
+  }
+  .account-text{
+    color: rgb(34, 19, 19);
+    font-size: small;
+  }
+  
