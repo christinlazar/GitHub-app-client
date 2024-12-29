@@ -1,21 +1,4 @@
-/* 
-.repository-details {
-    border: 2px solid #ddd;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  
-  .repository-details h2 {
-    color:rgb(215, 72, 11);
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  
-  .repository-details p {
-    color: #0a0202;
-    font-size: 1.2em;
-  } */
-  
+
   .app-card {
     max-width: 800px;
     padding: 24px;

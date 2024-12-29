@@ -184,12 +184,10 @@
    cursor: pointer;
   }
 
-  /* ----------------------------- */
   .review-modal {
     z-index: 40;
     height: 24rem;
     width: 24rem;
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
     border: 1px solid rgba(19, 20, 21, 0.5);
     border-radius: 10px;
     overflow-y: auto;
@@ -207,7 +205,6 @@
     font-weight: bold;
     font-size: 1.25rem;
     text-align: center;
-    /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
     color: #000000;
     padding: 1.25rem;
   }

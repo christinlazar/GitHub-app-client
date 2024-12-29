@@ -77,3 +77,12 @@ export const sortUsers = async (sortBy) =>{
         return error
     }
 }
+
+export const searchuser = async (seacrhBy) =>{
+    try {
+        const result = await Api.get(`/search?SearchBy=${seacrhBy}`)
+        return result
+    } catch (error) {
+        return error
+    }
+}

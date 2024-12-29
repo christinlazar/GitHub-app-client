@@ -11,7 +11,6 @@ function Followers() {
         const getFollowers = async () =>{
           const response = await getfollowers(user.user_url)
           if(response.data){
-            console.log("Dataaaaa",response.data)
             setFollwersData(response.data)
           }
         }

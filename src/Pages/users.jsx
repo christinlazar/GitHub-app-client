@@ -1,10 +1,12 @@
-import { fetchAllUsers, sortUsers,  } from '../Api/userApi'
+import { toast, Toaster } from 'sonner'
+import { fetchAllUsers, searchuser, sortUsers,  } from '../Api/userApi'
 import './friends.css'
 import React, { useEffect, useState } from 'react'
 
 function Users() {
     const [users,setUsers] = useState([])
     const [selectedOption,setSelectedOption] = useState('')
+    const [searchValue,setSearchValue] = useState('')
     useEffect(()=>{
         const fetchUsers = async () =>{
             const response = await fetchAllUsers()
@@ -24,11 +26,26 @@ function Users() {
                 setUsers(response.data.users)
             }
         } catch (error) {
-            
+            toast.error("Something unexpected happend")
+        }
+    }
+
+    const handleSearch = async () =>{
+        try {
+            const response = await searchuser(searchValue)
+            if(response.status == 404){
+               return  toast.error("Cant find a user")
+            }
+            if(response.data.users){
+                setUsers(response.data.users)
+            }
+        } catch (error) {
+            toast.error("Something unexpected happend")
         }
     }
   return (
     <>
+    <Toaster richColors />
      <div className="container">
       <label htmlFor="options" className="label">Select an option:</label>
       <select
@@ -44,7 +61,13 @@ function Users() {
         <option value="following">following</option>
         <option value="createdAt">created_at</option>
       </select>
+     
     </div>
+    <div class="search-container1">
+            <input onChange={(e)=>setSearchValue(e.target.value)} type="text" id="searchBox1" placeholder="Search..." />
+            <button onClick={handleSearch} id="searchButton1">Search</button>
+        </div>
+          
     {
         
      users && users.map((user,index)=> (

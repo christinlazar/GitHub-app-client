@@ -10,10 +10,8 @@ function FollowerDetials() {
     const [repoData,setRepoData] = useState([])
     useEffect(()=>{
         const getFollowerRepository = async ()=>{
-            console.log("In getfollowrepo")
             const response = await getfollowerRepo(username)
             if(response){
-                console.log(response.data)
                 setRepoData(response.data)
             }
         }

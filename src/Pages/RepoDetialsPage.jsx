@@ -4,15 +4,6 @@ import { useSelector } from 'react-redux'
 function RepoDetialsPage({repo}) {
     const {repoData} = useSelector((state)=>state.auth)
   return (
-  //   <div className="repository-details">
-  //   <h2>Repository Details</h2>
-  //   <h3>{repoData.username}</h3>
-  //   <p><strong>Description:</strong> {repoData.description}</p>
-  //   <p><strong>Created At:</strong> {new Date(repoData.created_at).toLocaleDateString()}</p>
-  //   <p><strong>Language:</strong> {repoData.language}</p>
-  //   <p><strong>Stars:</strong> {repoData.stars}</p>
-  //   <p><strong>Forks:</strong> {repoData.forks}</p>
-  // </div>
   <div className="app-card">
   <div className="app-header">
     <img  src= "https://i.pinimg.com/736x/89/25/a6/8925a64f6b430a0b1bb061dfbfa66bf4.jpg" alt="Gitpod Logo" className="app-logo" />
